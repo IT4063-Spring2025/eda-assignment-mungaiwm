@@ -23,7 +23,7 @@
 # #### Package Imports
 # We will keep coming back to this cell to add "import" statements, and configure libraries as we need
 
-# In[1]:
+# In[7]:
 
 
 # Common imports
@@ -54,44 +54,50 @@ plt.style.use("bmh")
 # 
 # Make sure you name the variable `housing` and that you use the appropriate pandas method to load the data.
 
-# In[2]:
+# In[10]:
 
 
 # 💻 Import the dataset in the project (data/housing.csv) into a dataframe called (housing)
+housing = pd.read_csv("data/housing.csv")
+
 
 
 # ### Task 2: Confirm the data was loaded correctly
 
 # #### 2.1: Get the first 6 records of the dataset
 
-# In[3]:
+# In[11]:
 
 
 # 💻 Get the first 6 records of the dataframe
+housing.head(6)
 
 
 # #### 2.2: Get the last 7 records of the dataset
 
-# In[4]:
+# In[12]:
 
 
 # 💻 Get the last 7 records of the dataframe
+housing.tail(7)
 
 
 # #### 2.3: Get a random sample of 10 records
 
-# In[5]:
+# In[13]:
 
 
 # 💻 Get a random 10 records of the dataframe
+housing.sample(10)
 
 
 # #### 2.4: Get information about the dataset, including the number of rows, number of columns, column names, and data types of each column
 
-# In[6]:
+# In[14]:
 
 
 # 💻 Show information about the different data columns (columns, data types, ...etc.)
+housing.info()
 
 
 # > 🚩 This is a good point to commit your code to your repository.
@@ -104,25 +110,26 @@ plt.style.use("bmh")
 # 
 #   ![Data types](https://miro.medium.com/max/1400/1*kySPZcf83qLOuaqB1vJxlg.jpeg)
 # </details>
-Longitude:          💻:
-Latitude:           💻:
-Housing Median Age: 💻:
-Total Rooms:        💻:
-Total Bedrooms:     💻:
-Population:         💻:
-Households:         💻:
-Median Income:      💻:
-Median House Value: 💻:
-Ocean Proximity:    💻:
+Longitude:          💻:Numerical-Continuous
+Latitude:           💻:Numerical-Continuous
+Housing Median Age: 💻:Numerical-Continuous
+Total Rooms:        💻:Numerical-discrete
+Total Bedrooms:     💻:Numerical-discrete
+Population:         💻:Numerical-discrete
+Households:         💻:Numerical-discrete
+Median Income:      💻:Numerical-Continuous
+Median House Value: 💻:Numerical-Continuous
+Ocean Proximity:    💻:Categorical-Nominal
 # > 🚩 This is a good point to commit your code to your repository.
 
 # ### Task 4: Understand the data
 # #### 4.1: Get the summary statistics for the numerical columns
 
-# In[7]:
+# In[15]:
 
 
 # 💻 Show the descriptive statistics information about the columns in the data frame
+housing.describe()
 
 
 # #### 4.2: For the categorical columns, get the frequency counts for each category
@@ -133,10 +140,11 @@ Ocean Proximity:    💻:
 #   - Use the `value_counts()` method on the categorical columns
 # </details>
 
-# In[8]:
+# In[16]:
 
 
 # 💻 Show the frequency of the values in the ocean_proximity column
+housing["ocean_proximity"].value_counts()
 
 
 # > 🚩 This is a good point to commit your code to your repository.
