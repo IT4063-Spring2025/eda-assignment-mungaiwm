@@ -53,22 +53,23 @@ You'll also find some tips and links to documentations that will help you comple
 **I learned:** (repeat as needed)
 - .
 
-**I struggled with:** (repeat as needed)
-- .
+**I struggled with:** 
+- I struggled with understanding how to handle outliers in the data.
 
 **I need the instructor to help me with:** (repeat as needed)
-- .
+- I need help understanding how to interpret correlation matrices and guidance on how to handle outliers in the data.Also, how to handle missing data by filling in missing values and and finally create visualizations using matplotlib and seaborn.
+
 
 **How long did it take you to complete this assignment? and reflect on that**
-[ ] hours.
+[7] hours.
 
-**How often did you have to check the solution to the problem? How do you feel about that?**
+**How often did you have to check the solution to the problem? How do you feel about that?** No solution provided
 
 
 **If I were to do this assignment again, I would:** (repeat as needed)
-- .
+- I would practice creating visualizations to improve my skills and make the visualizations more effective.
 
-**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [ ] out of 20.
+**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [20+ extra credit] out of 20.
 
 --------------------
 ## 📚 References and Citations
@@ -76,7 +77,7 @@ You'll also find some tips and links to documentations that will help you comple
 - .
   
 **I received help from the following people:** (repeat as needed)
-- . 
+- . I received help from Module video and copilot AI to understand some concepts.
 
 ---
 ## Copyrights and License
